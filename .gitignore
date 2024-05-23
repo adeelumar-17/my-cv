@@ -1,0 +1,8 @@
+#ignore these files
+*.log
+*.aux
+*.bcf
+*.out
+*.run.xml
+*.synctex.gz
+*.pdf
