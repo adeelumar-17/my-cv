@@ -1,27 +1,4 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2021 Jitin Nair
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%	
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 %	DOCUMENT DEFINITION
 %----------------------------------------------------------------------------------------
 
@@ -30,23 +7,11 @@
 
 %----------------------------------------------------------------------------------------
 %	FONT
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 
-% % fontspec allows you to use TTF/OTF fonts directly
-% \usepackage{fontspec}
-% \defaultfontfeatures{Ligatures=TeX}
-
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
-
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 %	PACKAGES
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 \usepackage{url}
 \usepackage{parskip} 	
 
@@ -79,7 +44,8 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{4pt}{4pt}
+\linespread{1.0}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -109,18 +75,12 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Muhammad Adeel Umar} \\[7.5pt]
 \href{https://github.com/adeelumar-17}{\raisebox{-0.05\height}\faGithub\ adeelumar-17} \ $|$ \ 
-\href{https://linkedin.com/in/adeekumar17}{\raisebox{-0.05\height}\faLinkedin\ adeelumar17} \ $|$ \ 
-\href{mailto:adeelumar30@hotmial.com}{\raisebox{-0.05\height}\faEnvelope \ adeelumar30@hotmail.com} \ $|$ \ 
-\href{tel:+923412047783}{\raisebox{-0.05\height}\faMobile \ +923412047783} \\
+\href{https://linkedin.com/in/adeelumar17}{\raisebox{-0.05\height}\faLinkedin\ adeelumar17} \ $|$ \ 
+\href{mailto:adeelumar30@hotmail.com}{\raisebox{-0.05\height}\faEnvelope \ adeelumar8755@gmail.com} \ $|$ \ 
+\href{tel:+923150886866}{\raisebox{-0.05\height}\faMobile \ +923412047783} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -129,63 +89,85 @@
 
 %Interests/ Keywords/ Summary
 \section{Career Objective}
-As a computer science undergraduate, I'm keen to explore cyber security and machine learning, aiming for continuous learning and development in these areas. \href{https://github.com/adeelumar-17/my-cv.git}{\underline{CV}}
+Passionate CS undergraduate focused on full-stack development and DevOps, with an aim to build scalable systems and automate workflows.
+\href{https://github.com/adeelumar-17/my-cv.git}{\underline{CV}}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-2022 - present  \hspace{100pt} B.S Computer Science \hspace{100pt} \textbf{FAST NUCES} \\
-2019 - 2021 \hspace{113pt} F.Sc Pre-Engineering  \hspace{105pt} \textbf{PAF College Sargodha}
-
+2022 - present  \hspace{100pt} B.S Computer Science \hspace{100pt} \textbf{FAST NUCES}
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 \section{Projects}
-%Dictionary
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Dictionary} \\
-\multicolumn{2}{@{}X@{}}{Developed a console-based English dictionary project utilizing object-oriented programming principles and the m-ary tree data structure in C++, ensuring efficient storage and retrieval of word definitions.Collaborated with team member via Git and GitHub, employing version control and collaborative workflows to manage project development.}  \\
+%Fortify
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\textbf{\href{https://github.com/adeelumar-17/fortify}{Fortify – Web-Based Security Suite}} \\
+\multicolumn{2}{@{}X@{}}{\begin{itemize}
+  \item Developed a full-stack security platform using \textbf{Node.js}, \textbf{Express.js}, \textbf{MongoDB}, and \textbf{EJS}, following the \textbf{MVC architecture}.
+  \item Built tools including password analyzer, encryption/decryption, and leak checker.
+  \item Integrated \textbf{authentication}, session handling, and role-based access control.
+  \item Designed a responsive frontend with \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}.
+\end{itemize}} \\
 \end{tabularx}
 \\
-%Snake Game
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Snake Game} \\
-\multicolumn{2}{@{}X@{}}{Developed a classic Snake game using 8086 Assembly Language, demonstrating proficiency in low-level programming and Intel x86 architecture.Facilitated collaboration and contribution to the project by creating a comprehensive README.md file, providing clear installation instructions, gameplay guidelines, and inviting others to contribute through GitHub.}  \\
+%Portfolio
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\textbf{\href{https://github.com/adeelumar-17/Portfolio}{Personal Portfolio Website}} \\
+\multicolumn{2}{@{}X@{}}{\begin{itemize}
+  \item Built a responsive portfolio using \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}.
+  \item Showcased certifications, skills, and projects with a clean, mobile-friendly UI.
+  \item Used animations and scroll effects to enhance user experience.
+\end{itemize}} \\
 \end{tabularx}
 \\
-%Airline Management System
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Airline Management System} \\
-\multicolumn{2}{@{}X@{}}{Created Windows Forms applications with .NET framework to build user-friendly interfaces for various functionalities.Developed SQL database to organize and manage data using Oracle.Established connections between SQL databases and Windows Forms applications, facilitating data interaction and retrieval.}  \\
+
+%Devops
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\textbf{\href{https://github.com/adeelumar-17/mydevops}{MyDevOps – Node.js DevOps Starter Kit}} \\
+\multicolumn{2}{@{}X@{}}{\begin{itemize}
+  \item Developed a boilerplate project with \textbf{Docker}, \textbf{Ansible}, and \textbf{GitHub Actions}.
+  \item Automated server provisioning and CI/CD workflows with \textbf{Ansible playbooks}.
+  \item Used \texttt{.env} files for environment-based configurations and secrets.
+\end{itemize}} \\
 \end{tabularx}
-\\
-%Operating System Simulation
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Operating System Simulation}\\
-\multicolumn{2}{@{}X@{}}{Developed an operating system simulator on linux environment using key concepts such as process creation, threads creation, context switching, resource allocation, and multitasking.Implemented features like resource management for process and thread creation and basic functionalities like a text editor,clock,calculator and mini-games within a multi-tasking environment.}  \\
-\end{tabularx}
+
+
+
 
 %----------------------------------------------------------------------------------------
 %	CERTIFICATIONS
 %----------------------------------------------------------------------------------------
 \section{Certifications}
-$\bullet$ \href{https://coursera.org/share/219dc4c656cd4114416bdb36af064e2a}{Introduction to Web Development with HTML, CSS, JavaScript}\\
-$\bullet$ \href{https://coursera.org/share/3c380cf6e3a7f9913eeedc4b92bd9193}{Introduction to Microsoft Azure Cloud Services}\\
-$\bullet$ \href{https://www.freecodecamp.org/certification/fcc22eeb458-904a-4ff3-9146-5291855407a8/foundational-c-sharp-with-microsoft}{Fundational C\# with Microsoft}
+\begin{itemize}
+$\bullet$ 
+\href{https://coursera.org/verify/RS5DX85RBSMU}{Introduction to Microsoft Azure Cloud Services}\\
+$\bullet$ \href{https://www.coursera.org/account/accomplishments/records/4KER8NU8582L}{Introduction to Web Development with HTML, CSS, JavaScript}\\
+$\bullet$ 
+\href{https://www.credly.com/badges/ec46484b-88ee-4142-a080-35a288bcc96d/linked_in_profile}{Networking Basics}
+\end{itemize}
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Achievements}
+\begin{itemize}
+  \item \textbf{Technical Team Head – Cybersecurity Society, FAST NUCES} \\
+  Led technical initiatives, mentored students, and organized workshops on security tools.
+
+  \item \textbf{Organized CTF Hackathon – Daira 2025} \\
+ Hosted a university-wide CTF competition during our tech festival, engaging students in real-world security challenges.
+\end{itemize}
+
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
-\begin{tabularx} {\linewidth}{@{}l X@{}}
-\textbf{Programming Languages} & \\
-$\bullet$ Advanced: C++ \\
-$\bullet$ Intermadiate: C\#, SQL, Assembly Language \\
-$\bullet$ Basic: Python, CSS/HTML, JavaScript \\
-\textbf{Cyber Security Skills} & \\
-$\bullet$ Linux \hspace{10pt} $\bullet$ Aircrack-ng \hspace{10pt} $\bullet$ Bash Scripting \hspace{10pt} $\bullet$ Basic Networking \\
-\textbf{Development Tools}  & \\
-$\bullet$ VS Code \hspace{20pt} $\bullet$ Git \hspace{20pt} $\bullet$ GitHub \\
-\end{tabularx}
+\hspace*{2em}\textbf{Languages:} C/C++, C\#, Python, JavaScript, Bash \\
+\hspace*{2em}\textbf{Web:} HTML, CSS, Node.js, Express.js, EJS, REST APIs \\
+\hspace*{2em}\textbf{Database:} MongoDB, SQLite, Oracle SQL \\
+\hspace*{2em}\textbf{DevOps:} Docker, GitHub Actions, Ansible, CI/CD, Git \\
+\hspace*{2em}\textbf{SysAdmin:} Linux, Network Administration
+
 
 \end{document}
