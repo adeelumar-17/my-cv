@@ -1,4 +1,27 @@
-%------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
 %	DOCUMENT DEFINITION
 %----------------------------------------------------------------------------------------
 
@@ -7,11 +30,23 @@
 
 %----------------------------------------------------------------------------------------
 %	FONT
-%------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 
-%------------------------------------------------------------
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
 %	PACKAGES
-%------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 \usepackage{url}
 \usepackage{parskip} 	
 
@@ -44,8 +79,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{4pt}{4pt}
-\linespread{1.0}
+\titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -60,9 +94,17 @@
 %for social icons
 \usepackage{fontawesome5}
 
+%spacing
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{0.95}
+
+\setlist{nosep}
+\setlist[itemize]{leftmargin=15pt, labelsep=5pt, itemsep=1pt, topsep=2pt}
+
+
+
 %debug page outer frames
 %\usepackage{showframe}
-
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -78,96 +120,82 @@
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Muhammad Adeel Umar} \\[7.5pt]
 \href{https://github.com/adeelumar-17}{\raisebox{-0.05\height}\faGithub\ adeelumar-17} \ $|$ \ 
-\href{https://linkedin.com/in/adeelumar17}{\raisebox{-0.05\height}\faLinkedin\ adeelumar17} \ $|$ \ 
-\href{mailto:adeelumar30@hotmail.com}{\raisebox{-0.05\height}\faEnvelope \ adeelumar8755@gmail.com} \ $|$ \ 
-\href{tel:+923150886866}{\raisebox{-0.05\height}\faMobile \ +923412047783} \\
+\href{https://linkedin.com/in/adeekumar17}{\raisebox{-0.05\height}\faLinkedin\ adeelumar17} \ $|$ \ 
+\href{mailto:adeelumar30@hotmail.com}{\raisebox{-0.05\height}\faEnvelope \ adeelumar30@hotmail.com} \ $|$ \ 
+\href{tel:+923150886866}{\raisebox{-0.05\height}\faMobile \ +923150886866} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
-%Interests/ Keywords/ Summary
 \section{Career Objective}
-Passionate CS undergraduate focused on full-stack development and DevOps, with an aim to build scalable systems and automate workflows.
-\href{https://github.com/adeelumar-17/my-cv.git}{\underline{CV}}
+As a computer science undergraduate, I am keen to explore cyber security and development, aiming for
+continuous learning and development in these areas. \href{https://github.com/adeelumar-17/my-cv.git}{\underline{CV}}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-2022 - present  \hspace{100pt} B.S Computer Science \hspace{100pt} \textbf{FAST NUCES}
+2022 - present  \hspace{100pt} B.S Computer Science \hspace{100pt} \textbf{FAST NUCES} 
+
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 \section{Projects}
-%Fortify
-\begin{tabularx}{\linewidth}{@{}l r@{}}
-\textbf{\href{https://github.com/adeelumar-17/fortify}{Fortify – Web-Based Security Suite}} \\
-\multicolumn{2}{@{}X@{}}{\begin{itemize}
-  \item Developed a full-stack security platform using \textbf{Node.js}, \textbf{Express.js}, \textbf{MongoDB}, and \textbf{EJS}, following the \textbf{MVC architecture}.
-  \item Built tools including password analyzer, encryption/decryption, and leak checker.
-  \item Integrated \textbf{authentication}, session handling, and role-based access control.
-  \item Designed a responsive frontend with \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}.
-\end{itemize}} \\
-\end{tabularx}
-\\
-%Portfolio
-\begin{tabularx}{\linewidth}{@{}l r@{}}
-\textbf{\href{https://github.com/adeelumar-17/Portfolio}{Personal Portfolio Website}} \\
-\multicolumn{2}{@{}X@{}}{\begin{itemize}
-  \item Built a responsive portfolio using \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}.
-  \item Showcased certifications, skills, and projects with a clean, mobile-friendly UI.
-  \item Used animations and scroll effects to enhance user experience.
-\end{itemize}} \\
-\end{tabularx}
-\\
 
-%Devops
-\begin{tabularx}{\linewidth}{@{}l r@{}}
-\textbf{\href{https://github.com/adeelumar-17/mydevops}{MyDevOps – Node.js DevOps Starter Kit}} \\
-\multicolumn{2}{@{}X@{}}{\begin{itemize}
-  \item Developed a boilerplate project with \textbf{Docker}, \textbf{Ansible}, and \textbf{GitHub Actions}.
-  \item Automated server provisioning and CI/CD workflows with \textbf{Ansible playbooks}.
-  \item Used \texttt{.env} files for environment-based configurations and secrets.
-\end{itemize}} \\
-\end{tabularx}
+\textbf{Peer-to-Peer Chat Application} 
+\begin{itemize}[leftmargin=20pt, labelsep=5pt, itemsep=2pt, topsep=2pt]
+\item Built a cross-platform P2P chat and file-sharing app using socket programming in C++.
+\item Secured user credentials with SQLite and password hashing.
+\item Supported multiple file types and encrypted peer connections.
+\end{itemize}
 
+\textbf{Web-Based Suite of Security Tools}
+\begin{itemize}[leftmargin=20pt, labelsep=5pt, itemsep=2pt, topsep=2pt]
+\item Developed a responsive web app offering essential cybersecurity utilities.
+\item Implemented tools like password analyzer, encryption, leak checker, and malware scanner.
+\item Added a cybersecurity awareness section for user education.
+\end{itemize}
 
-
+\textbf{Airline Management System}
+\begin{itemize}[leftmargin=20pt, labelsep=5pt, itemsep=2pt, topsep=2pt]
+\item Created a Windows Forms application using C\# and the .NET Framework.
+\item Designed and managed an Oracle SQL database for backend operations.
+\item Connected frontend UI with the database for dynamic data interaction.
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	CERTIFICATIONS
 %----------------------------------------------------------------------------------------
 \section{Certifications}
-\begin{itemize}
-$\bullet$ 
-\href{https://coursera.org/verify/RS5DX85RBSMU}{Introduction to Microsoft Azure Cloud Services}\\
-$\bullet$ \href{https://www.coursera.org/account/accomplishments/records/4KER8NU8582L}{Introduction to Web Development with HTML, CSS, JavaScript}\\
-$\bullet$ 
-\href{https://www.credly.com/badges/ec46484b-88ee-4142-a080-35a288bcc96d/linked_in_profile}{Networking Basics}
+\begin{itemize}[leftmargin=20pt, labelsep=5pt, itemsep=2pt, topsep=2pt]
+\item  \href{https://www.credly.com/badges/1796a68c-4d0f-48cd-ad0c-290dd0ac0ff4}{Junior Cybersecurity Analyst}
+\item \href{https://www.credly.com/earner/earned/badge/bd051450-6ae1-4ae4-823a-59c213a1b78d}{Ethical Hacker}
+\item \href{https://www.credly.com/badges/b545cced-c04d-49d6-a9d2-c7e3bd0eb49f}{Network Defense}
+\item \href{https://www.coursera.org/account/accomplishments/specialization/SJSRYP1PUTYW}{Fortinet Network Security}
 \end{itemize}
 %----------------------------------------------------------------------------------------
-%	SKILLS
+%	ACHIEVEMENTS
 %----------------------------------------------------------------------------------------
 \section{Achievements}
-\begin{itemize}
-  \item \textbf{Technical Team Head – Cybersecurity Society, FAST NUCES} \\
-  Led technical initiatives, mentored students, and organized workshops on security tools.
+\begin{itemize}[leftmargin=20pt, labelsep=5pt, itemsep=2pt, topsep=2pt]
+\item \textbf{Technical Team Head – Cybersecurity Society, FAST NUCES}\\
+Leading technical initiatives, guiding students in cybersecurity, and overseeing workshops and tool development within the society. \\[2pt]
 
-  \item \textbf{Organized CTF Hackathon – Daira 2025} \\
- Hosted a university-wide CTF competition during our tech festival, engaging students in real-world security challenges.
+\item \textbf{Organized CTF Hackathon – Daira 2025}\\
+Planned and hosted a Capture The Flag (CTF) cybersecurity competition under our university’s tech festival “Daira 2025”, engaging participants in real-world security challenges.
 \end{itemize}
-
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
-\hspace*{2em}\textbf{Languages:} C/C++, C\#, Python, JavaScript, Bash \\
-\hspace*{2em}\textbf{Web:} HTML, CSS, Node.js, Express.js, EJS, REST APIs \\
-\hspace*{2em}\textbf{Database:} MongoDB, SQLite, Oracle SQL \\
-\hspace*{2em}\textbf{DevOps:} Docker, GitHub Actions, Ansible, CI/CD, Git \\
-\hspace*{2em}\textbf{SysAdmin:} Linux, Network Administration
+\begin{itemize}[leftmargin=20pt, labelsep=5pt, itemsep=2pt, topsep=2pt]
+\item C\textbackslash C++ \hspace{10pt} $\bullet$ C\# \hspace{10pt} $\bullet$ Python \hspace{10pt} $\bullet$ JavaScript
 
+
+\item Linux Administration \hspace{10pt} $\bullet$ Network Administration \hspace{10pt} $\bullet$ Nmap \hspace{10pt} $\bullet$ Metasploit \hspace{10pt} $\bullet$ Aircrack-ng
+\end{itemize}
+ 
 
 \end{document}
